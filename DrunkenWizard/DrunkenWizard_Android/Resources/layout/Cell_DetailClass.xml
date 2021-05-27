@@ -1,0 +1,77 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id = "@+id/linMain"
+    android:background = "#131212">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+          android:layout_marginBottom = "10dp"
+        android:layout_marginTop = "10dp">
+
+    <TextView
+            android:id = "@+id/textViewlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Level "
+            android:textStyle = "bold"
+            android:layout_marginLeft = "5dp"
+            android:layout_marginTop = "5dp"
+            android:textSize = "16dp"
+            android:textColor = "@color/my_white"
+    />
+          <TextView
+            android:id = "@+id/txtLevelspell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "10"
+            android:textStyle = "bold"
+         android:layout_toRightOf = "@+id/textViewlevel"
+            android:layout_marginTop = "5dp"
+             android:textSize = "16dp"
+             android:textColor = "@color/my_white"
+    />
+
+        <TextView
+            android:id = "@+id/textviewSpellName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Level "
+            android:textStyle = "bold"
+        android:layout_toRightOf = "@+id/txtLevelspell"
+            android:layout_marginTop = "5dp"
+             android:textSize = "16dp"
+             android:textColor = "@color/my_white"
+    />
+
+        <TextView
+            android:id = "@+id/textViewSpellEffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Level "
+            android:layout_marginLeft = "5dp"
+            android:layout_marginTop = "5dp"
+            android:layout_below = "@+id/textViewlevel"
+             android:textSize = "14dp"
+             android:textColor = "@color/my_white"
+            
+    />
+
+        <TextView
+            android:id = "@+id/textViewSpellEffectSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Level "
+            android:layout_marginLeft = "5dp"
+            android:layout_marginTop = "5dp"
+            android:layout_below = "@+id/textViewSpellEffect"
+            android:textSize = "14dp"
+             android:textColor = "@color/my_white"
+          
+    />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#131212">
+
+
+    <RelativeLayout
+        android:id = "@+id/RelativeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below = "@+id/textView1"
+            android:layout_marginTop = "5dp">
+            <RelativeLayout
+                android:id = "@+id/RelativeScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+        >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell1"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/textView1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerInParent = "true"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/textView1">
+
+                        <LinearLayout
+                            android:id="@+id/Spell1_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell1_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"/>
+
+                            <TextView
+                                android:id="@+id/txtLevel1Roll1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"
+                                android:layout_gravity = "center_horizontal"           
+                />
+                            <TextView
+                                android:id="@+id/txtSecondTextview1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                               android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic" 
+                />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell2"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/rtlRootSpell1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerInParent = "true"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/form_Spell1">
+
+                        <LinearLayout
+                            android:id="@+id/Spell2_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell2_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Level 2"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"   />
+
+                            <TextView
+                                android:id="@+id/txtLevel2Roll2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text = "fejfei"
+                               android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"
+                                android:layout_gravity = "center_horizontal"   />
+
+
+                            <TextView
+                                android:id="@+id/txtSecondTextview2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                               android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_gravity = "center_horizontal"  
+                                android:textStyle = "italic" 
+                />
+
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell3"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/rtlRootSpell2">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/form_Spell2">
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:id="@+id/imgLevelUpCheering"
+                            android:layout_marginLeft ="1dp"
+                            android:src = "@drawable/boss"
+                            android:layout_gravity = "top"                 
+		/>
+                        <LinearLayout
+                            android:id="@+id/Spell3_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell3_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"/>
+
+                            <TextView
+                                android:id="@+id/txtLevel3Roll3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text = "fejfei"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"  
+                />
+
+                            <TextView
+                                android:id="@+id/txtSecondTextview3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle="bold" 
+                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell4"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/rtlRootSpell3">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/form_Spell3">
+
+                        <LinearLayout
+                            android:id="@+id/Spell4_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell4_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Level 4"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"            />
+
+                            <TextView
+                                android:id="@+id/txtLevel4Roll4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text = "fejfei"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"  
+                />
+
+                            <TextView
+                                android:id="@+id/txtSecondTextview4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic" 
+                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell5"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/rtlRootSpell4">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/form_Spell4">
+
+
+
+                        <LinearLayout
+                            android:id="@+id/Spell5_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell5_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Level 5"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"            />
+
+                            <TextView
+                                android:id="@+id/txtLevel5Roll5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text = "fejfei"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"    
+                />
+                            <TextView
+                                android:id="@+id/txtSecondTextview5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic" 
+                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell6"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/rtlRootSpell5">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/form_Spell5">
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:id="@+id/imgboss6"
+                            android:layout_marginLeft ="1dp"
+                            android:src = "@drawable/boss"
+                            android:layout_gravity = "top"                
+		/>
+                        <LinearLayout
+                            android:id="@+id/Spell6_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell6_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Level 6"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"  />
+
+                            <TextView
+                                android:id="@+id/txtLevel6Roll6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text = "fejfei"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"    
+                />
+
+                            <TextView
+                                android:id="@+id/txtSecondTextview6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle="bold" 
+                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell7"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/rtlRootSpell6">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/form_Spell6">
+
+                        <LinearLayout
+                            android:id="@+id/Spell7_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell7_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Level 7"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"            />
+
+                            <TextView
+                                android:id="@+id/txtLevel7Roll7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text = "fejfei"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"   
+                />
+
+                            <TextView
+                                android:id="@+id/txtSecondTextview7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"  
+                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell8"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/rtlRootSpell7">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/form_Spell7">
+
+                        <LinearLayout
+                            android:id="@+id/Spell8_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell8_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Level 8"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"            />
+
+                            <TextView
+                                android:id="@+id/txtLevel8Roll8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text = "fejfei"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"   
+                />
+
+
+                            <TextView
+                                android:id="@+id/txtSecondTextview8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic" 
+                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell9"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/rtlRootSpell8">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/form_Spell7">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:id="@+id/imgBoss9"
+                            android:layout_marginLeft ="1dp"
+                            android:src = "@drawable/boss"
+                            android:layout_gravity = "top"
+		/>
+                        <LinearLayout
+                            android:id="@+id/Spell9_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell9_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Level 9"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false" />
+
+                            <TextView
+                                android:id="@+id/txtLevel9Roll9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:layout_gravity = "center_horizontal"
+                                android:text = "fejfei"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"    
+                />
+
+                            <TextView
+                                android:id="@+id/txtSecondTextview9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle="bold" 
+                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/rtlRootSpell10"
+                    android:animateLayoutChanges="true"
+                    android:layout_below = "@+id/rtlRootSpell9">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/form_Spell10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:layout_marginLeft = "7dp"
+                        android:layout_marginRight ="7dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="4dp"
+                        android:layout_centerHorizontal = "true"
+                        android:layout_below = "@+id/form_Spell6"
+        >
+
+                        <LinearLayout
+                            android:id="@+id/Spell10_views"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/Spell10_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Level 10"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:textAllCaps="false"            />
+
+                            <TextView
+                                android:id="@+id/txtLevel10Roll10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginBottom="5dp"
+                                android:visibility="gone"
+                                android:text = "fejfei"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"    
+                />
+
+                            <TextView
+                                android:id="@+id/txtSecondTextview10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor = "@color/my_black"
+                                android:layout_marginTop = "5dp"
+                                android:layout_marginBottom = "5dp"
+                                android:visibility="gone"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:textStyle = "italic"  
+                />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

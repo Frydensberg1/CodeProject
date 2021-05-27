@@ -1,0 +1,108 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background = "@android:color/transparent" >
+              >
+    
+ 
+
+   <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background = "@android:color/transparent">
+
+      <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation = "vertical">
+
+         <android.support.v7.widget.CardView  
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                id = "@+id/cardView1"
+                app:cardBackgroundColor = "#66423f3f"
+                
+               >
+
+            <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background = "@android:color/transparent">
+
+				<ScrollView  android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+    <TextView
+              android:id="@+id/Headline"
+              android:text="Rules"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor ="@color/my_white"
+              android:textSize="20sp" 
+              android:background = "@android:color/transparent"/>
+					 
+
+					</ScrollView>
+           
+         </LinearLayout>
+
+         </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView  
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+               app:cardBackgroundColor = "#66423f3f"
+                android:layout_below = "@+id/cardView1">
+
+            <LinearLayout
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+				<ScrollView  android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+    <TextView
+              android:id="@+id/Headline2"
+              android:text="Rules"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor ="@color/my_white"
+              android:textSize="20sp" />
+					 
+
+					</ScrollView>
+           
+         </LinearLayout>
+
+         </android.support.v7.widget.CardView>
+
+
+            
+    
+    
+            
+             </LinearLayout>
+        </RelativeLayout>
+       
+	</android.support.v4.widget.NestedScrollView>
+
+    
+    
+
+
+
+
+  </android.support.design.widget.CoordinatorLayout>

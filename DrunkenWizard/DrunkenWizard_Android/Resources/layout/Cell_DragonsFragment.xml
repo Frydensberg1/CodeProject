@@ -1,0 +1,44 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp">
+    <RelativeLayout
+                android:id = "@+id/rlt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id= "@+id/imgdrag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+            android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:src = "@drawable/zeodrenth"
+        />
+
+                <TextView
+                    android:id = "@+id/txtdrag"
+                    android:layout_below="@+id/imgdrag"
+                    android:layout_marginLeft = "10dp"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text = "Zeodrenth"
+            
+                    android:textSize = "20sp"
+                    android:textColor = "@color/my_white"              
+                />
+
+
+
+            </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

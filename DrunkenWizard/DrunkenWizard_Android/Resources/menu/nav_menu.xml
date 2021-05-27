@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item android:id="@+id/nav_home" android:title="Home" android:icon="@drawable/homemenu" />
+    <item android:id="@+id/nav_rules" android:title="Rules" android:icon="@drawable/rulesmenu" />
+    <item android:id="@+id/nav_Classes" android:title="Classes" android:checkable="true" android:icon="@drawable/classmenu"/>
+    <item android:id="@+id/nav_Dragons" android:title="Dragons" android:checkable="true" android:icon="@drawable/DragonMenu"/>
+  </group>
+  <item android:title="Game">
+    <menu>
+      <item android:id="@+id/nav_JoinGame" android:title="Join Game" android:checkable="true" android:icon="@drawable/Game" />
+      <item android:id="@+id/nav_currentgame" android:title="Current Game" android:checkable="true" android:icon="@drawable/Game" />
+    </menu>
+  </item>
+</menu>

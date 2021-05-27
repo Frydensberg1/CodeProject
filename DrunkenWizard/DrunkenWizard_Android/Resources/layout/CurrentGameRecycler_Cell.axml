@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background = "#1A000000"
+	>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text ="TheWizard1337"
+            android:id ="@+id/txtNamePlayer"
+            android:textSize ="19sp"
+            android:textColor ="@color/my_white"
+            android:maxWidth="140dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:layout_marginTop ="10dp"
+            android:layout_marginLeft ="5dp"
+            android:gravity = "center_vertical"
+				
+		/>
+
+
+        <Refractored.Controls.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_centerHorizontal ="true"
+            app:civ_border_width="2sp"
+            app:civ_border_color="#FF000000"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id ="@+id/level"
+            android:text ="10"
+            android:textSize ="19sp"
+            android:textColor ="@color/my_white"
+            android:layout_marginTop ="10dp"
+            android:layout_marginRight ="5dp"
+            android:layout_marginLeft ="10dp"
+            android:layout_alignParentRight = "true"
+            android:layout_alignBaseline = "@+id/txtNamePlayer"	
+              
+
+
+		/>
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/imgLevelUpCheering"
+            android:layout_toRightOf ="@+id/profile_image"
+            android:layout_marginLeft ="1dp"
+		/>
+
+        <ImageView
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:id="@+id/imgMagicBeast"
+            android:layout_toRightOf ="@+id/imgLevelUpCheering"
+            android:paddingRight ="5dp"
+	
+		/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation = "horizontal"
+        >
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:id="@+id/imgSpell1"
+            android:paddingLeft="5dp"
+            android:paddingRight ="5dp"
+            android:layout_marginTop = "5dp"
+            android:layout_gravity = "center_vertical"
+		/>
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:id="@+id/imgSpell2"
+            android:layout_toRightOf = "@+id/imgSpell1"
+            android:paddingRight ="5dp"
+            android:layout_marginTop = "5dp"
+		/>
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:id="@+id/imgSpell3"
+            android:layout_toRightOf = "@+id/imgSpell2"
+            android:paddingRight ="5dp"
+            android:layout_marginTop = "5dp"
+		/>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal = "true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/dice"
+                    android:layout_marginRight = "10dp"
+                    android:src = "@drawable/gamemenu"
+                    android:layout_marginTop = "10dp"
+		/>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/imgbtnRollingSpells"
+                    android:layout_centerHorizontal = "true"
+                    android:src = "@drawable/dices"
+                    android:gravity="center_horizontal"
+                    android:layout_toRightOf ="@+id/dice"
+                    android:layout_marginTop = "10dp"
+		/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+     
+
+          <Refractored.Controls.CircleImageView
+            android:layout_width="50dp"
+             android:id= "@+id/btnminus"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btnplus"
+            app:civ_fill_color="#ff0000"
+        android:src="@mipmap/simpleminus"/>
+
+           
+           <Refractored.Controls.CircleImageView
+            android:id= "@+id/btnplus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+               android:layout_alignParentRight = "true"
+            android:layout_marginRight="5dp"
+            app:civ_fill_color="#00FF00"
+      android:src="@mipmap/simpleplus"/>
+
+           
+
+       
+            
+
+        
+
+    </RelativeLayout>
+
+</LinearLayout>
+

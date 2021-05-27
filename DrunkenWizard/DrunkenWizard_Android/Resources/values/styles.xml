@@ -1,0 +1,115 @@
+<resources>
+
+  <style name="Theme.MyTheme.Base" parent="Theme.AppCompat">
+    <item name="windowNoTitle">true</item>
+    <!--We will be using the toolbar so no need to show ActionBar-->
+    <item name="windowActionBar">false</item>
+    <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+    <!-- colorPrimary is used for the default action bar background -->
+    <item name="colorPrimary">@color/my_black</item>
+    <!-- colorPrimaryDark is used for the status bar -->
+    <item name="colorPrimaryDark">@color/primaryDark</item>
+    <!-- colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets -->
+    <item name="windowActionModeOverlay">true</item>
+    <item name="colorAccent">#ffffff</item>
+    <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight and colorSwitchThumbNormal. -->
+    <!-- Option to hide the drop shadow here
+    
+      <item name="actionBarStyle">@style/Theme.MyTheme.ActionBar</item>
+      <item name="android:windowContentOverlay">@null</item>
+    -->
+  </style>
+
+  <style name="Theme.MyTheme" parent="Theme.MyTheme.Base">
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">#000000</item>
+    <item name="android:windowContentTransitions">true</item>
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+    <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+  </style>
+
+
+  <style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/DrunkenWizardLogo</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="AlertDialogBeast" parent="Base.Theme.AppCompat.Light.Dialog">
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+    <item name="android:colorAccent">#c8362e</item>
+    <item name="android:background">#333131</item>
+  </style>
+
+
+  <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+    <item name="android:colorAccent">#ffffff</item>
+    <item name="android:background">#333131</item>
+  </style>
+
+
+  <style name="AlertDialog_Boss" parent="Base.Theme.AppCompat.Light.Dialog">
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+    <item name="android:colorAccent">#FFFFFF</item>
+    <item name="android:background">#3a0202</item>
+  </style>
+
+  <style name="AlertDialog_Delete" parent="Base.Theme.AppCompat.Light.Dialog">
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+    <item name="android:colorAccent">#FFFFFF</item>
+    <item name="android:background">#424242</item>
+  </style>
+
+  <style name="AlertDialog_Boost" parent="Base.Theme.AppCompat.Light.Dialog">
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+    <item name="android:colorAccent">#FFFFFF</item>
+    <item name="android:background">#ecbf1b</item>
+  </style>
+
+  <style name="AlertDialog_LongClickMenu" parent="Base.Theme.AppCompat.Light.Dialog">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+  </style>
+
+  <style name="AlertDialog_LevelUp" parent="Base.Theme.AppCompat.Light.Dialog">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+  </style>
+
+  <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+    <item name="android:textSize">14sp</item>
+  </style>
+
+  <style name="SpellTabText" parent="TextAppearance.Design.Tab">
+    <item name="android:textSize">12sp</item>
+  </style>
+  
+  <style name="Widget.CardContent" parent="android:Widget">
+    <item name="android:paddingLeft">12dp</item>
+    <item name="android:paddingRight">12dp</item>
+    <item name="android:paddingTop">20dp</item>
+    <item name="android:paddingBottom">20dp</item>
+    <item name="android:orientation">vertical</item>
+  </style>
+
+  <style name="ThemeOverlay.AppCompat.navTheme">
+    <!-- Color of text and icon when SELECTED -->
+    <item name="colorPrimary">#1e4ae7</item>
+    <!-- Background color when SELECTED -->
+    <item name="colorControlHighlight">#591e4ae7</item>
+  </style>
+
+  <style name="TwoTabsSize" parent="TextAppearance.Design.Tab">
+    <item name="android:textSize">16sp</item>
+  </style>
+
+</resources>

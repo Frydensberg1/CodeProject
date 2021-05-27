@@ -1,0 +1,142 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#131212">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:id = "@+id/rtlRollSpells"
+            android:animateLayoutChanges="true">
+
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarSpell"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcvSpells"
+            android:layout_above = "@+id/button1"
+            android:layout_below = "@+id/toolbarSpell"
+        />
+      
+        <Button
+            android:id = "@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_alignParentBottom = "true"
+            android:layout_marginTop = "5dp"
+        android:background = "@android:color/transparent"/>
+            <android.support.v7.widget.CardView
+                android:id="@+id/formrollspells"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:layout_marginTop = "5dp"
+                  
+                app:cardCornerRadius="6dp"
+                app:cardElevation="4dp"
+                android:layout_centerInParent = "true"
+                android:layout_centerHorizontal = "true"
+                android:layout_alignParentBottom = "true"
+                       >
+
+                <LinearLayout
+                    android:id="@+id/rollSpells"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/Roll_Spellsbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:background="#131212"
+                        android:textAllCaps="false"
+                        android:text = "Rolling Spells"/>
+
+                    <TextView
+                        android:id="@+id/Roll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor = "@color/my_white"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textStyle = "bold"
+                    
+                        android:layout_gravity = "center_horizontal"
+                        android:text = "1 libnje"
+                        />
+                    <TextView
+                        android:id="@+id/Roll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         android:textColor = "@color/my_white"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                         android:textStyle = "bold"
+                        android:text = "2 libnje"
+                />
+                    <TextView
+                        android:id="@+id/Roll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         android:textColor = "@color/my_white"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                         android:textStyle = "bold"
+                        android:text = "3 libnje"
+                />
+                    <TextView
+                        android:id="@+id/Roll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         android:textColor = "@color/my_white"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textStyle = "bold"
+                        android:text = "3 libnje"
+                />
+                    <TextView
+                        android:id="@+id/Roll6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor = "@color/my_white"
+                        android:layout_marginTop = "5dp"
+                        android:layout_marginBottom = "5dp"
+                        android:visibility="gone"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                         android:textStyle = "bold"
+                        android:text = "3 libnje"
+                />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+  
+    </RelativeLayout>
+
+</LinearLayout>

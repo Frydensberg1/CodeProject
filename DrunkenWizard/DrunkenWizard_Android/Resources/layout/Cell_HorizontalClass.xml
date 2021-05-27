@@ -1,0 +1,57 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:background ="@android:color/transparent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <FrameLayout
+             android:id="@+id/cardViewHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:background = "#00000000">
+
+            <RelativeLayout
+                android:id="@+id/relativeHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imageViewHorizontal"
+                    android:layout_width="228px"
+                    android:layout_height="228px"
+                    android:layout_alignParentTop = "true"
+                    android:layout_marginTop = "5dp"
+                    android:layout_centerHorizontal = "true"
+                    android:background ="@android:color/transparent"
+                 />
+
+                <TextView
+                    android:id="@+id/textHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize ="16sp"
+                    android:paddingBottom ="5dp"
+                    android:gravity = "center"
+                    android:background ="@android:color/transparent"
+                    android:layout_below ="@+id/imageViewHorizontal"                            
+           />
+
+
+
+
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+</LinearLayout>

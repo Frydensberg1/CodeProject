@@ -1,0 +1,7 @@
+/Users/a/Projects/DrunkenWizard_Android/source/repos/DrunkenWizard_Android/Toast/bin/Release/Toast.dll
+/Users/a/Projects/DrunkenWizard_Android/source/repos/DrunkenWizard_Android/Toast/bin/Release/Toast.pdb
+/Users/a/Projects/DrunkenWizard_Android/source/repos/DrunkenWizard_Android/Toast/obj/Release/optimized/
+/Users/a/Projects/DrunkenWizard_Android/source/repos/DrunkenWizard_Android/Toast/obj/Release/Toast.csprojAssemblyReference.cache
+/Users/a/Projects/DrunkenWizard_Android/source/repos/DrunkenWizard_Android/Toast/obj/Release/Toast.csproj.CoreCompileInputs.cache
+/Users/a/Projects/DrunkenWizard_Android/source/repos/DrunkenWizard_Android/Toast/obj/Release/Toast.dll
+/Users/a/Projects/DrunkenWizard_Android/source/repos/DrunkenWizard_Android/Toast/obj/Release/Toast.pdb

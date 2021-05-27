@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text = "Menu"
+        android:gravity = "center_horizontal"
+        
+        android:layout_marginLeft = "5dp"
+        android:layout_marginRight ="5dp" 
+    android:textSize = "20sp"
+        android:textColor = "@color/my_white"
+        android:textStyle ="bold"
+    android:background = "@android:color/black"/>
+      <android.support.v7.widget.CardView
+       android:id ="@+id/btnFightBoss"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft = "5dp"
+        android:layout_marginRight ="5dp" 
+        app:cardElevation="4dp"
+        android:layout_centerInParent = "true"
+        android:layout_centerHorizontal = "true"
+        app:cardBackgroundColor = "#3a0202">
+
+        <RelativeLayout
+            android:id="@+id/Spell1_views"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/danger"
+            android:layout_alignParentLeft = "true"
+            android:paddingLeft = "5dp"
+            android:paddingTop = "5dp"
+            android:layout_centerVertical = "true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/danger"
+            android:layout_alignParentRight = "true"
+            android:paddingRight = "5dp"
+            android:paddingTop = "5dp"
+             android:layout_centerVertical = "true"/>
+    
+            <TextView
+                android:id="@+id/txtLevel1Roll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor = "#ffffff"
+                android:text ="Fight Mighty Magic Beast"
+                 android:textStyle="bold" 
+                 android:textSize = "17sp"
+                android:layout_centerInParent = "true"
+                />
+    
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    
+
+     <android.support.v7.widget.CardView
+        android:id = "@+id/btnBoost"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft = "5dp"
+        android:layout_marginRight ="5dp" 
+        app:cardElevation="4dp"
+        android:layout_centerInParent = "true"
+        android:layout_centerHorizontal = "true"
+        app:cardBackgroundColor = "#ecbf1b">
+
+        <RelativeLayout
+            android:id="@+id/Spell1_views"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/boost"
+            android:layout_alignParentLeft = "true"
+            android:paddingLeft = "5dp"
+            android:paddingTop = "5dp"
+            android:layout_centerVertical = "true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/boost"
+            android:layout_alignParentRight = "true"
+            android:paddingRight = "5dp"
+            android:paddingTop = "5dp"
+             android:layout_centerVertical = "true"/>
+    
+            <TextView
+                android:id="@+id/txtLevel1Roll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor = "#ffffff"
+               android:text ="Use Boost (level up)"
+                 android:textStyle="bold" 
+                 android:textSize = "17sp"
+                android:layout_centerInParent = "true"
+                />
+    
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    
+
+     <android.support.v7.widget.CardView
+        android:id = "@+id/btnChange"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft = "5dp"
+        android:layout_marginRight ="5dp" 
+        app:cardElevation="4dp"
+        android:layout_centerInParent = "true"
+        android:layout_centerHorizontal = "true"
+        app:cardBackgroundColor = "#00003f">
+
+        <RelativeLayout
+            android:id="@+id/Spell1_views"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/changeplayer"
+            android:layout_alignParentLeft = "true"
+            android:paddingLeft = "5dp"
+            android:paddingTop = "5dp"
+            android:layout_centerVertical = "true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/changeplayer"
+            android:layout_alignParentRight = "true"
+            android:paddingRight = "5dp"
+            android:paddingTop = "5dp"
+             android:layout_centerVertical = "true"/>
+    
+            <TextView
+                android:id="@+id/txtLevel1Roll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor = "#ffffff"
+               android:text ="Change Class"
+                 android:textStyle="bold" 
+                 android:textSize = "17sp"
+                android:layout_centerInParent = "true"
+                />
+    
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+     
+
+
+     <android.support.v7.widget.CardView
+        android:id ="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft = "5dp"
+        android:layout_marginRight ="5dp" 
+        app:cardElevation="4dp"
+        android:layout_centerInParent = "true"
+        android:layout_centerHorizontal = "true"
+        app:cardBackgroundColor = "#000000">
+
+        <RelativeLayout
+            android:id="@+id/Spell1_views"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/deleteplayer"
+            android:layout_alignParentLeft = "true"
+            android:paddingLeft = "5dp"
+            android:paddingTop = "5dp"
+            android:layout_centerVertical = "true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/deleteplayer"
+            android:layout_alignParentRight = "true"
+            android:paddingRight = "5dp"
+            android:paddingTop = "5dp"
+             android:layout_centerVertical = "true"/>
+    
+            <TextView
+                android:id="@+id/txtLevel1Roll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor = "#ffffff"
+                 android:text="Delete Player"
+                 android:textStyle="bold" 
+                 android:textSize = "17sp"
+                android:layout_centerInParent = "true"
+                />
+    
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id = "@+id/imageButton1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+             android:layout_marginLeft = "10dp"
+            android:src = "@drawable/boost"
+            android:backgroundTint = "#ecbf1b"
+             android:background = "@drawable/circle"/>
+       
+
+             <ImageButton
+            android:id = "@+id/imageButton2"
+             android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft = "10dp"
+        android:background = "@drawable/circle"
+            android:src= "@drawable/changeplayer"
+            android:backgroundTint = "@android:color/holo_blue_dark"
+        android:layout_toRightOf = "@+id/imageButton1"/>
+       
+             <ImageButton
+            android:id = "@+id/imageButton3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+             android:layout_marginLeft = "10dp"
+        android:background = "@drawable/circle"
+            android:src = "@drawable/dices"
+            android:backgroundTint = "@color/my_green"
+        android:layout_toRightOf = "@+id/imageButton2"/>
+
+          <ImageButton
+            android:id = "@+id/imageButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+             android:layout_marginLeft = "10dp"
+            
+        android:background = "@drawable/circle"
+            android:src = "@drawable/deleteplayer"
+            android:backgroundTint = "@color/my_black"
+        android:layout_toRightOf = "@+id/imageButton3"/>
+        <ImageButton
+            android:id = "@+id/imageButton5"
+           android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft = "10dp"
+            
+        android:background = "@drawable/circle"
+            android:src = "@drawable/danger"
+            android:backgroundTint = "@color/my_black"
+        android:layout_toRightOf = "@+id/imageButton4"/>
+    
+    </RelativeLayout>
+
+
+</LinearLayout>

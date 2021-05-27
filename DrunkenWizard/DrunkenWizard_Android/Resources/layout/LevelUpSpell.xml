@@ -1,0 +1,112 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id = "@+id/linearLevelRoll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMessageSpell"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textStyle = "bold"
+            android:gravity="center"
+            android:layout_gravity = "center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:background="@android:color/transparent"/>
+
+       <android.support.v7.widget.CardView
+            android:id = "@+id/cWLevelRoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            android:layout_gravity = "center"
+            app:cardBackgroundColor = "@android:color/holo_blue_dark">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation = "vertical">
+                <TextView
+                    android:id="@+id/txtspellName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor = "@android:color/white"
+                    android:layout_marginTop = "5dp"
+                    android:layout_marginBottom = "5dp"
+                    android:text = "Titel"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:textStyle = "bold"
+                    android:layout_centerHorizontal = "true"
+                />
+
+                <ImageView
+                    android:id = "@+id/imgDrunkenWizardLevel10"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity = "center_horizontal"
+                    android:layout_below ="@+id/txtspellName"
+                    android:visibility = "gone"/>
+
+                <TextView
+                    android:id = "@+id/txtspellEffect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text = "Content hereContent hereContent hereContent hereContent hereContent hereContent hereContent hereContent here"
+                    android:textColor = "@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_below ="@+id/imgDrunkenWizardLevel10"
+                    android:layout_marginTop = "5dp"
+                    android:padding="10dp"/>
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_below="@+id/txtspellEffect"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop = "5dp"
+                    android:background="@color/my_white"/>
+
+
+                <TextView
+                    android:id="@+id/btnlvlupok"
+                    android:layout_width="match_parent"
+                    android:text="OK"
+                    android:gravity="center"
+                    android:layout_below="@+id/v1"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/my_white"
+                    android:layout_marginLeft="2dp"
+                    android:layout_height="40dp"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

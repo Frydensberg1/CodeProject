@@ -1,0 +1,137 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtbossfight"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:textColor="@color/my_white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background = "#1F2020"
+            android:text="Boss Fights"/>
+        <LinearLayout
+            android:layout_below ="@+id/txtbossfight"
+            android:layout_width="match_parent"
+            android:background="#908d8d"
+            android:layout_height="wrap_content"
+            android:weightSum = "3"
+            android:orientation = "horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "1">
+
+                <TextView
+                    android:id="@+id/txtboss1level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Level 3"
+                    android:textStyle="italic"
+                    android:textColor="@color/my_white"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imgboss1"
+                    android:layout_below="@+id/txtboss1level"
+                    android:src="@drawable/bossundefeated"
+                    android:layout_marginLeft ="1dp"
+		/>
+
+
+                <TextView
+                    android:id="@+id/txtboss1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Undefeated"
+                    android:textStyle="italic"
+                    android:textColor="@color/my_white"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/imgboss1"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "1">
+                <TextView
+                    android:id="@+id/txtboss2level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Level 6"
+                    android:textStyle="italic"
+                    android:textColor="@color/my_white"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="center"/>
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imgboss2"
+                    android:layout_below="@+id/txtboss2level"
+                    android:src="@drawable/bossundefeated"
+                    android:layout_marginLeft ="1dp"
+		/>
+                <TextView
+                    android:id="@+id/txtboss2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Undefeated"
+                    android:textStyle="italic"
+                    android:textColor="@color/my_white"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/imgboss2"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight = "1">
+                <TextView
+                    android:id="@+id/txtboss3level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Level 9"
+                    android:textStyle="italic"
+                    android:textColor="@color/my_white"
+                    android:layout_marginBottom="5dp"
+                    android:textAlignment="center"/>
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imgboss3"
+                    android:layout_below="@+id/txtboss3level"
+                    android:src="@drawable/bossundefeated"
+                    android:layout_marginLeft ="1dp"
+		/>
+                <TextView
+                    android:id="@+id/txtboss3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Undefeated"
+                    android:textStyle="italic"
+                    android:textColor="@color/my_white"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/imgboss3"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

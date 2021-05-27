@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#59000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal">
+    
+      <View 
+   android:layout_width="0dp"
+   android:layout_height="1dp"       
+   android:background="#ACACAC" 
+   android:layout_weight = "1"
+        android:layout_gravity = "center_vertical"/>
+
+        <TextView
+            android:id = "@+id/txtTitleDragon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight = "2"
+            android:textColor = "@color/my_white"
+            android:textStyle = "bold"
+            android:textSize = "32sp"
+            android:layout_gravity = "center_horizontal"
+            android:gravity = "center_horizontal"
+            android:layout_marginTop = "5dp"
+            android:layout_marginBottom = "10dp"     
+        />
+         <View 
+   android:layout_width="0dp"
+   android:layout_height="1dp"       
+   android:background="#ACACAC" 
+   android:layout_weight = "1"
+   android:layout_gravity = "center_vertical"/>
+    
+    
+    </LinearLayout>
+ 
+  
+         	<ImageView
+    android:id="@+id/imgDragon"
+     android:layout_width="match_parent"
+         android:layout_height="256dp"
+	android:layout_gravity = "center_horizontal"
+                   android:scaleType="centerCrop"
+                android:fitsSystemWindows="true"
+        
+     />
+
+        
+        <TextView
+          android:id = "@+id/txtDescriptionDragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:maxWidth = "270dp"
+        android:textColor = "@color/my_white"
+        android:textSize = "20sp"
+       android:layout_gravity = "center_horizontal"
+         android:layout_marginTop = "10dp"
+        android:layout_marginBottom = "10dp"
+        />
+      <View 
+   android:layout_width="match_parent"
+   android:layout_height="1dp"       
+   android:background="#ACACAC" 
+   android:layout_gravity = "center_vertical"/>
+   
+</LinearLayout>

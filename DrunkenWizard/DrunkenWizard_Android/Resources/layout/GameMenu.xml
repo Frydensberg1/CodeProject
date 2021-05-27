@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id = "@+id/btnClose"
+            android:text ="Close"
+            android:textColor ="@android:color/holo_red_dark"
+            android:backgroundTint ="@android:color/transparent"
+            android:background ="@android:color/transparent"
+            android:textSize ="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom = "20dp"
+        />
+    <FrameLayout
+            android:layout_below = "@+id/btnClose"
+                android:id = "@+id/frame"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+            android:background = "@android:color/transparent"
+      android:layout_centerInParent = "true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id = "@+id/frameBoost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop = "true"
+                android:layout_alignParentLeft = "true">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id = "@+id/imgbtnBoost"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src = "@drawable/boost_small"
+                        android:backgroundTint = "#ecbf1b"
+                        android:background = "@drawable/circle"
+                />
+
+                    <TextView
+                        android:id ="@+id/txtBoost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Boost"
+                        android:textStyle = "bold"
+                        android:layout_centerHorizontal = "true"
+                        android:textSize ="28sp"
+                        android:textColor = "@color/my_white"
+                        android:layout_below = "@+id/imgbtnBoost"/>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id = "@+id/frameChangePlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft = "8dp"
+                android:layout_alignParentBottom = "true">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id = "@+id/imgbtnChangePlayer"
+                         android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:background = "@drawable/circle"
+                        android:src= "@drawable/changeclass_img"
+                        android:backgroundTint = "@android:color/holo_blue_dark"/>
+
+                    <TextView
+                        android:id ="@+id/txtChangePlayer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Change"
+                         android:textSize ="28sp"
+                        android:textStyle = "bold"
+                        android:layout_centerHorizontal = "true"
+                        android:textColor = "@color/my_white"
+                        android:layout_below = "@+id/imgbtnChangePlayer"/>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id = "@+id/frameDragon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight = "true">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageButton
+                        android:id = "@+id/imgbtnDragon"
+                         android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:background = "@drawable/circle"
+                        android:src = "@drawable/dragons_img"
+                        android:backgroundTint = "#3a0202"
+                        android:layout_toRightOf =  "@+id/imgbtnChangePlayer"/>
+
+                    <TextView
+                        android:id ="@+id/txtDragon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Dragons"
+                            android:textSize ="28sp"
+                            android:textStyle = "bold"
+                        android:layout_centerHorizontal = "true"
+                        android:textColor = "@color/my_white"
+                        android:layout_below = "@+id/imgbtnDragon"/>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id = "@+id/frameDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft = "8dp"
+                    android:layout_alignParentBottom = "true"
+                    android:layout_alignParentRight = "true">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id = "@+id/imgbtnDelete"
+                         android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:background = "@drawable/circle"
+                        android:src = "@drawable/deleteplayer_img"
+                        android:backgroundTint = "#424242"
+                        android:layout_toRightOf = "@+id/imgbtnDragon"/>
+
+                    <TextView
+                        android:id ="@+id/txtDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "Delete"
+                            android:textStyle ="bold"
+                            android:textSize ="28sp"
+                        android:layout_centerHorizontal = "true"
+                        android:textColor = "@color/my_white"
+                        android:layout_below = "@+id/imgbtnDelete"/>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>
